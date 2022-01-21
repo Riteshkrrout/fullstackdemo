@@ -1,0 +1,63 @@
+	
+
+#git config --edit --global
+
+create local repo   ---> git init "Name repo" 
+to change directory   cd "Name repo"
+to check the files available in the repo   ls -la
+
+notepad++ ReadMe.md
+#---> <h1>
+##---> <h2>
+###---><h3>
+
+
+files in repo has 3 phases
+1. Working phase  ----> unstage 
+2. Staged phase   ---->   git add "ReadMe.md"
+		   git add .    //  all the files created/modified added in the staged phase
+3. Commited phase  git commit -m "fist commit"   // commit the changes
+
+to check the status of the repo
+git status
+
+
+
+to link remote repo with Local repo
+git remote add origin "path of repo"
+
+to check if the reomte repo is linked with the local repo
+git remote -v
+
+
+
+
+to create a branch----> git branch branchName
+			git checkout branchname  // branch is an exact copy of master branch
+			git checkout -b branchName   // creation of branch +checkout
+
+to push the branch to remore repo use the command
+   git push origin childBranchName
+
+
+
+How to resolve conflict
+
+1. git fetch// remote repo
+   git merge // to merge
+
+2. git pull // fetch+merge
+
+
+LchildBranch(half) --------->Rchild branch// commit1,commit2,commit3
+Rchild branch---> RMaster branch   --->Merge   ----> commit1,commit2,commit3
+				   --->Rebase------> commit
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+1)git init   - ---------> initilize remote repo
+2)git add  ----------->  use to change status for unstaged to staged
+3)git commit -m   --------> to commit changes into remote repo
+
+
